@@ -1,9 +1,9 @@
-# 🛡 SOC INCIDENT CARD – Passwd Found in Requested URL - Possible LFI Attack
+# SOC INCIDENT CARD – Passwd Found in Requested URL - Possible LFI Attack
 
-**📅 Date/Time:** Mar 01, 2022, 10:10AM 
-**📌 Event ID:** 120
-**📍 Location:** WebServer1006 | 172.16.17[.]13  
-**🚨 Severity:** High
+**Date/Time:** Mar 01, 2022, 10:10AM  
+**Event ID:** 120  
+**Location:** WebServer1006 | 172.16.17[.]13   
+**Severity:** High
 
 ## 1. Summary
 Event 120 was triggered by a URL contains passwd rule that was blocked by the firewall
@@ -50,11 +50,11 @@ Request URL: hxxps://172.16.17[.]13/?file=../../../../etc/passwd
 ---
 
 ## 6. Recommended Actions
-✅ Thoroughly validate all user-supplied inputs to prevent directory traversal attempts.  
-✅ Use a whitelist of allowed file paths or IDs, and reject any input that doesn't match.  
-✅ Remove or encode potentially malicious characters from user input.  
-✅ Run web applications with the least necessary privileges to minimize the potential impact of an attack.  
+- Thoroughly validate all user-supplied inputs to prevent directory traversal attempts.  
+- Use a whitelist of allowed file paths or IDs, and reject any input that doesn't match.  
+- Remove or encode potentially malicious characters from user input.  
+- Run web applications with the least necessary privileges to minimize the potential impact of an attack.  
 
 ---
 
-**📌 Final Verdict:** True Positive, attack not successful
+**Final Verdict:** True Positive, attack not successful
